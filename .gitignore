@@ -1,4 +1,9 @@
-MANIFEST
+.gitignore
+# .gitignore が置かれたディレクトリ内の下記ファイルあるいはフォルダを除外
+.DS_Store
+.idea
 .idea/
+MANIFEST
+
 trainer/__pycache__/
 --*-*

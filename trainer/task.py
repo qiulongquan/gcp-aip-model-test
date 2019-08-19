@@ -1,12 +1,11 @@
+import trainer.model as model
+import trainer.util as util
 import tensorflow as tf
-from . import model
-from . import util
-
 
 def train_and_evaluate():
 
     train_x, train_y = util.load_data()
-
+    print("train_x=%d,train_y=%d".format(train_x, train_y))
 
     # Create the Keras Model
     keras_model = model.create_keras_model()

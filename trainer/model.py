@@ -13,7 +13,7 @@ def create_keras_model():
     model.add(Dense(1, activation="sigmoid"))
 
     # モデルをコンパイル
-    model.compile(loss="binary_crossentropy", optimizer="sgd", metrics=["accuracy"])
+    model.compile(loss="binary_crossentropy", optimizer="Adadelta", metrics=["accuracy"])
 
     model.summary()
 
